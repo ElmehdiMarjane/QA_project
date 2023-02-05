@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iCyZstGNYxHjYjGQIGlP7YfXwj1FTALuDjt5nmJ0i3Y=",
+  "Source": "QA_api",
+  "BasePath": "_content/QA_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
