@@ -4,7 +4,7 @@
 
 namespace QA_api.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,8 +16,8 @@ namespace QA_api.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     QuestionText = table.Column<string>(type: "TEXT", maxLength: 25, nullable: false),
                     Points = table.Column<int>(type: "INTEGER", nullable: false),
-                    answer = table.Column<string>(type: "TEXT", nullable: false),
-                    category = table.Column<string>(type: "TEXT", nullable: false)
+                    Answer = table.Column<string>(type: "TEXT", nullable: false),
+                    Category = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

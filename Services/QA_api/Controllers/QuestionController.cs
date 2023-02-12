@@ -8,14 +8,14 @@ using QA_api.Repositoriy;
 
 namespace QA_api.Controllers
 {
-    [ApiController]
+    
     [Route("api/Questions")]
     public class QuestionController : ControllerBase
     {
         protected ResponseDTO _response;
         private IQuestionRepository questionRepository;
 
-        public QuestionController(ResponseDTO response, IQuestionRepository questionRepository)
+        public QuestionController(IQuestionRepository questionRepository)
         {
             this._response =new ResponseDTO();
             this.questionRepository = questionRepository;

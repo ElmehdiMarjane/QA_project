@@ -14,15 +14,23 @@ namespace QA_api.Repositoriy
     {
         private readonly Ctx _dbContext;
         private IMapper _mapper;
+
+        public QuestionRepository(Ctx dbContext, IMapper mapper)
+        {
+            _dbContext = dbContext;
+            _mapper = mapper;
+        }
+
         public async Task<QuestionDto> CreateUpdateQuestion(QuestionDto questionDto)
         {
             Question question=_mapper.Map<QuestionDto,Question>(questionDto);
             if(question.QuestionId>0){
                 _dbContext.Questions.Update(question);
             }else{
+                Console.WriteLine(question.QuestionText);
                 _dbContext.Questions.Add(question);
             }
-            await _dbContext.AddRangeAsync();
+            await _dbContext.SaveChangesAsync();
             return _mapper.Map<Question,QuestionDto>(question);
            
         }

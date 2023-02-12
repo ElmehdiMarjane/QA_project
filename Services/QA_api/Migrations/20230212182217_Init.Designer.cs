@@ -10,8 +10,8 @@ using QA_api.Context;
 namespace QA_api.Migrations
 {
     [DbContext(typeof(Ctx))]
-    [Migration("20230205210040_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230212182217_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,20 +24,20 @@ namespace QA_api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Answer")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Points")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("QuestionText")
                         .IsRequired()
                         .HasMaxLength(25)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("answer")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("category")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("QuestionId");
