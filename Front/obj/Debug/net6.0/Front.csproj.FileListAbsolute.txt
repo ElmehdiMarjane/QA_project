@@ -30,3 +30,4 @@ C:\Users\mehdi\Documents\DotnetTest\QA App\Front\bin\Debug\net6.0\Swashbuckle.As
 C:\Users\mehdi\Documents\DotnetTest\QA App\Front\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\mehdi\Documents\DotnetTest\QA App\Front\obj\Debug\net6.0\Front.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mehdi\Documents\DotnetTest\QA App\Front\obj\Debug\net6.0\Front.csproj.CopyComplete
+C:\Users\mehdi\Documents\DotnetTest\QA App\Front\bin\Debug\net6.0\Newtonsoft.Json.dll
