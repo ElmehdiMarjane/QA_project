@@ -1,14 +1,18 @@
 using Front;
+using Front.Services;
+using Front.Services.IServices;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddHttpClient<IQuestionService,QuestionService>();
 
+SD.QuestionAPIBase=builder.Configuration["ServiceUrls:QuestionAPI"];
+builder.Services.AddScoped<IQuestionService,QuestionService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 
-SD.QuestionAPIBase=builder.Configuration["ServiceUrls:QuestionAPI"];
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

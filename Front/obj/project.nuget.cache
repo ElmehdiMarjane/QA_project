@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c57XuHu0tLmhbMKUnw38MeqGCCKZXjDMu9A19vbHZbhiD9Yr1Qmr+VTR/j/OaI4pY/whqnsF0wp5qrLY4xNsNQ==",
+  "dgSpecHash": "neSIwfXYPmzGZMSXPYlioUirw/lrYcYa4r0pBjsrA5dq/HAQrMLtgls4VMzb3oACRbN6haFVg8shu1G/1z+M5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mehdi\\Documents\\DotnetTest\\QA App\\Front\\Front.csproj",
+  "projectFilePath": "c:\\Users\\mehdi\\Documents\\DotnetTest\\QA App\\Front\\Front.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mehdi\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\mehdi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\mehdi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\mehdi\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
